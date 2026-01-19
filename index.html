@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Miracle Clement | Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<script>
+    window.addEventListener("load", () => {
+        const skills = 
+        document.querySelectorAll(".skill-progress");
+        skills.forEach(skill => {
+            skill.style.width = skill.getAttribute("data-percent");
+        });
+    });
+</script>
+<body>
+
+    <nav class="navbar navbar-epand-lg fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar - brand" href="#">Miracle</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1>Hello, I'm <span>Miracle Clement</span></h1>
+            <p>web Developer | Tech Enthusiast | German Language Learner</p>
+            <a href="#projects" class="btn btn-primary">See My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developervwho enjoys building modern, responsive, and user friendly websites. I am also currently learning the German Language and continously improving my skills through hands-on projects and real-world practice. I build modern, responsive, and user-friendly websites that help business grow online.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4"><p>HTML</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="85%"></div>
+                    </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <p>CSS</p> 
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="75%"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <p>Bootstrap</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="60%"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <p>Javascript</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="30%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h5>Portfolio Website</h5>
+                <p>A modern personal portfolio website showcasing my skills and projects.</p>
+            </div>
+            <div class="project-card">
+                <h5>Business Website</h5>
+                <p>A responsive business website demonstrating navigation, responsiveness and styling.</p>
+                <a href="https://github.com/themimiluv/Sonnen-department.git" target="_blank" class="btn btn-outline-primary"> View on Github</a>
+            </div>
+            <div class="project-card">
+                <h5>E-commerce Website</h5>
+                <p>An E-commerce business website built with clean UI and structured layout.</p>
+                <a href="https://github.com/themimiluv/techito.git" target="_blank" class="btn btn-outline-primary"> View on Github</a>
+            </div>
+            <div class="project-card">
+                <h5>Investment Website</h5>
+                <p></p>
+                <a href="https://github.com/themimiluv/investment.git" target="_blank" class="btn btn-outline-primary"> View on Github</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <input type="text" class="form-control mb-3" placeholder="Your Name">
+                        <input type="email" class="form-control mb-3" placeholder="Your Email">
+                        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                        <button class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center footer">
+        <p>Interested in working together? Lets talk.</p>
+        <p>Email: miracleclement050@gmail.com</p>
+        <p>Phone: 08156382618</p>
+        <p>@ 2026 Miracle Nwanneka Clement. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
